@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { LogIn, SignUp } from './login.models';
+import { LogIn } from './login.models';
 import { FormsModule } from '@angular/forms';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 
@@ -13,9 +13,6 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
 export class LoginComponent {
   constructor(private httpClient: HttpClient) {}
 
-  isSignInVisible: boolean = true;
-
-  signUpObj: SignUp = new SignUp();
   loginObj: LogIn = new LogIn();
 
   handleLogin() {

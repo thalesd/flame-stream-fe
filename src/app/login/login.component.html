@@ -16,7 +16,7 @@
     name="password"
   />
   <div class="keepLoggedIn">
-    <input type="checkbox" />
+    <input type="checkbox" name="keepLoggedIn" [(ngModel)]="loginObj.keepLoggedIn"/>
     <span>Keep me logged in.</span>
   </div>
   <button class="primary" type="button" (click)="handleLogin()">Login</button>

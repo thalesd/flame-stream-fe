@@ -1,0 +1,30 @@
+<form class="register-form">
+    <div class="register-header">
+      <h1>Sing up!</h1>
+      <p>Create a brand new account.</p>
+    </div>
+    <input
+      type="text"
+      placeholder="Username"
+      [(ngModel)]="registerObj.username"
+      name="username"
+    />
+    <input
+      type="password"
+      placeholder="Password"
+      [(ngModel)]="registerObj.password"
+      name="password"
+    />
+    <input
+      type="password"
+      placeholder="ConfirmPassword"
+      [(ngModel)]="registerObj.confirmPassword"
+      name="password"
+    />
+    <div class="agreeToTerms">
+      <input type="checkbox" name="agreeToTerms" [(ngModel)]="registerObj.agreeToTerms"/>
+      <span>I agree to the terms of service</span>
+    </div>
+    <button class="primary" type="button" (click)="handleRegister()">Login</button>
+  </form>
+  
